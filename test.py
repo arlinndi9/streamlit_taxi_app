@@ -71,7 +71,7 @@ def home():
         year=st.number_input("enter year")
         registrationplate = st.number_input("registration plate")
         model = ['bmw','audi']
-        model = st.selectbox('Select location:', model)
+        model = st.selectbox('Select model:', model)
         if st.button("Insert"):
             insert_data_cars(model,year,registrationplate)
 
